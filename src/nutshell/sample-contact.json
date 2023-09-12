@@ -1,0 +1,170 @@
+{
+    "meta": { "instanceId": "318797", "siteId": "eBqlia1R" },
+    "links": {
+        "events.comments": {
+            "href": "https://app.nutshell.com/rest/comments?parent_id={events.id}",
+            "type": "comments"
+        },
+        "events.actor": {
+            "href": "https://app.nutshell.com/rest/{events.actorType}/{events.actor}",
+            "type": "actors"
+        },
+        "events.payloads": {
+            "href": "https://app.nutshell.com/rest/{events.payloadType}/{events.payloads}",
+            "type": "payloads"
+        },
+        "actors.teams": {
+            "href": "https://app.nutshell.com/rest/teams/{actors.teams}",
+            "type": "teams"
+        },
+        "payloads.accounts": {
+            "href": "https://app.nutshell.com/rest/accounts/{payloads.accounts}",
+            "type": "accounts"
+        },
+        "payloads.creator": {
+            "href": "https://app.nutshell.com/rest/creators/{payloads.creator}",
+            "type": "creators"
+        },
+        "payloads.owner": {
+            "href": "https://app.nutshell.com/rest/owners/{payloads.owner}",
+            "type": "owners"
+        },
+        "payloads.territory": {
+            "href": "https://app.nutshell.com/rest/territories/{payloads.territory}",
+            "type": "territories"
+        },
+        "payloads.tags": {
+            "href": "https://app.nutshell.com/rest/tags/{payloads.tags}",
+            "type": "tags"
+        },
+        "payloads.files": {
+            "href": "https://app.nutshell.com/rest/contacts/{contacts.id}/files",
+            "type": "files"
+        },
+        "payloads.relatedFiles": {
+            "href": "https://app.nutshell.com/rest/contacts/{contacts.id}/relatedfiles",
+            "type": "files"
+        },
+        "payloads.followup": {
+            "href": "https://app.nutshell.com/rest/followups/{payloads.followup}",
+            "type": "followups"
+        },
+        "payloads.recurringTask": {
+            "href": "https://app.nutshell.com/rest/tasks/{payloads.recurringTask}",
+            "type": "tasks"
+        }
+    },
+    "events": [
+        {
+            "id": "6307327-events",
+            "type": "events",
+            "createdTime": 1694003602,
+            "actorType": "users",
+            "payloadType": "contacts",
+            "action": "update",
+            "changes": [{ "attribute": "phone", "oldValue": null, "newValue": "+1 3022984726" }],
+            "count": null,
+            "links": { "comments": [], "actor": "75-users", "payloads": ["55975-contacts"] }
+        }
+    ],
+    "actors": [
+        {
+            "id": "75-users",
+            "type": "users",
+            "name": "Amanda Moffett",
+            "firstName": "Amanda",
+            "modifiedTime": 1677794908,
+            "isEnabled": true,
+            "hasSetPassword": true,
+            "isAdministrator": true,
+            "isViewingRestricted": false,
+            "isHiddenFromFilters": false,
+            "canAccessEmailMarketing": true,
+            "emails": ["ammoffett@sitmeanssit.com", "amoffett@sitmeanssit.com"],
+            "phonecallerType": "",
+            "avatarUrl": "https://app.nutshell.com/avatar/users/75/318797/Czb1kJU4rq6PS_QShvQF1X3_Y7ncSc18HgEsXnOm0n4.2/1677794908",
+            "initials": "AM",
+            "links": { "teams": [] }
+        }
+    ],
+    "payloads": [
+        {
+            "id": "55975-contacts",
+            "type": "contacts",
+            "name": "Reynaldo Botello",
+            "description": null,
+            "emails": [
+                { "isPrimary": true, "name": "email", "value": "fernand00o@icloud.com" },
+                { "isPrimary": false, "name": "email", "value": "reynaldobotello@icloud.com" }
+            ],
+            "addresses": [
+                {
+                    "isPrimary": true,
+                    "name": "address",
+                    "value": {
+                        "location": {
+                            "longitude": -100.4458824000000021214873413555324077606201171875,
+                            "latitude": 39.78373040000000315785655402578413486480712890625
+                        },
+                        "locationAccuracy": "1",
+                        "address_1": "51 valley ford rd newcastle de 19720",
+                        "address_2": null,
+                        "address_3": null,
+                        "city": "",
+                        "state": "",
+                        "postalCode": "",
+                        "country": "US",
+                        "timezone": "America/Chicago"
+                    }
+                }
+            ],
+            "phones": [
+                {
+                    "isPrimary": true,
+                    "name": "phone",
+                    "value": {
+                        "countryCode": "1",
+                        "number": "3025074541",
+                        "extension": null,
+                        "numberFormatted": "302-507-4541",
+                        "E164": "+13025074541",
+                        "countryCodeAndNumber": "+1 302-507-4541"
+                    }
+                },
+                {
+                    "isPrimary": false,
+                    "name": "phone",
+                    "value": {
+                        "countryCode": "1",
+                        "number": "3022984726",
+                        "extension": "",
+                        "numberFormatted": "302-298-4726",
+                        "E164": "+13022984726",
+                        "countryCodeAndNumber": "+1 302-298-4726"
+                    }
+                }
+            ],
+            "urls": [],
+            "jobTitle": "",
+            "firstName": "Reynaldo",
+            "lastName": "Botello",
+            "mcfxContactId": null,
+            "href": "https://app.nutshell.com/rest/contacts/55975-contacts",
+            "avatarUrl": "https://app.nutshell.com/avatar/contacts/55975/318797/oLo_Z2mrRl5C6VSbSpdbdhbEbuvdTha0iq5LsJrPrRo.2/1694003602",
+            "initials": "RB",
+            "htmlUrl": "https://app.nutshell.com/person/55975-reynaldo-botello",
+            "htmlUrlPath": "/person/55975-reynaldo-botello",
+            "links": {
+                "accounts": [],
+                "creator": "75-users",
+                "owner": "75-users",
+                "territory": null,
+                "tags": [],
+                "files": [],
+                "relatedFiles": [],
+                "followup": null,
+                "recurringTask": null
+            }
+        }
+    ]
+}

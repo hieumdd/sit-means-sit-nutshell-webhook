@@ -1,0 +1,215 @@
+{
+    "meta": { "instanceId": "318797", "siteId": "eBqlia1R" },
+    "links": {
+        "events.comments": {
+            "href": "https://app.nutshell.com/rest/comments?parent_id={events.id}",
+            "type": "comments"
+        },
+        "events.actor": {
+            "href": "https://app.nutshell.com/rest/{events.actorType}/{events.actor}",
+            "type": "actors"
+        },
+        "events.payloads": {
+            "href": "https://app.nutshell.com/rest/{events.payloadType}/{events.payloads}",
+            "type": "payloads"
+        },
+        "actors.teams": {
+            "href": "https://app.nutshell.com/rest/teams/{actors.teams}",
+            "type": "teams"
+        },
+        "payloads.accounts": {
+            "href": "https://app.nutshell.com/rest/accounts/{payloads.accounts}",
+            "type": "accounts"
+        },
+        "payloads.contacts": {
+            "href": "https://app.nutshell.com/rest/contacts/{payloads.contacts}",
+            "type": "contacts"
+        },
+        "payloads.tags": {
+            "href": "https://app.nutshell.com/rest/tags/{payloads.tags}",
+            "type": "tags"
+        },
+        "payloads.sources": {
+            "href": "https://app.nutshell.com/rest/sources/{payloads.sources}",
+            "type": "sources"
+        },
+        "payloads.owner": {
+            "href": "https://app.nutshell.com/rest/{leads.ownerType}/{leads.owner}",
+            "type": "owners"
+        },
+        "payloads.files": {
+            "href": "https://app.nutshell.com/rest/leads/{leads.id}/files",
+            "type": "files"
+        },
+        "payloads.relatedFiles": {
+            "href": "https://app.nutshell.com/rest/leads/{leads.id}/relatedfiles",
+            "type": "files"
+        },
+        "payloads.territory": {
+            "href": "https://app.nutshell.com/rest/territories/{payloads.territory}",
+            "type": "territories"
+        },
+        "payloads.destinations": {
+            "href": "https://app.nutshell.com/rest/destinations?entityId={leads.id}",
+            "type": "destinations"
+        },
+        "payloads.stage": {
+            "href": "https://app.nutshell.com/rest/stages/{payloads.stage}",
+            "type": "stages"
+        },
+        "payloads.stageset": {
+            "href": "https://app.nutshell.com/rest/leads/{leads.id}/stages",
+            "type": "stagesets"
+        },
+        "payloads.creator": {
+            "href": "https://app.nutshell.com/rest/creators/{payloads.creator}",
+            "type": "creators"
+        },
+        "payloads.products": {
+            "href": "https://app.nutshell.com/rest/products/{payloads.products}",
+            "type": "products"
+        },
+        "payloads.productMaps": {
+            "href": "https://app.nutshell.com/rest/productMaps/{payloads.productMaps}",
+            "type": "productMaps"
+        },
+        "payloads.competitors": {
+            "href": "https://app.nutshell.com/rest/competitors/{payloads.competitors}",
+            "type": "competitors"
+        },
+        "payloads.competitorMaps": {
+            "href": "https://app.nutshell.com/rest/competitorMaps/{payloads.competitorMaps}",
+            "type": "competitorMaps"
+        },
+        "payloads.outcome": {
+            "href": "https://app.nutshell.com/rest/outcomes/{payloads.outcome}",
+            "type": "outcomes"
+        },
+        "payloads.watchers": {
+            "href": "https://app.nutshell.com/rest/users/{payloads.watchers}",
+            "type": "users"
+        },
+        "owners.teams": {
+            "href": "https://app.nutshell.com/rest/teams/{owners.teams}",
+            "type": "teams"
+        }
+    },
+    "events": [
+        {
+            "id": "6307263-events",
+            "type": "events",
+            "createdTime": 1694002264,
+            "actorType": "users",
+            "payloadType": "leads",
+            "action": "update",
+            "changes": [
+                { "attribute": "confidence", "oldValue": "50", "newValue": "20" },
+                { "attribute": "milestone_id", "oldValue": "211", "newValue": "207" }
+            ],
+            "count": null,
+            "links": { "comments": [], "actor": "15-users", "payloads": ["59379-leads"] }
+        }
+    ],
+    "actors": [
+        {
+            "id": "15-users",
+            "type": "users",
+            "name": "Tori Gorham",
+            "firstName": "Tori",
+            "modifiedTime": 1633977214,
+            "isEnabled": true,
+            "hasSetPassword": true,
+            "isAdministrator": true,
+            "isViewingRestricted": false,
+            "isHiddenFromFilters": false,
+            "canAccessEmailMarketing": true,
+            "emails": ["tgorham@sitmeanssit.com", "sitmeanssitbelair@gmail.com"],
+            "phonecallerType": "",
+            "avatarUrl": "https://app.nutshell.com/avatar/users/15/318797/kBDFOtK0Xgb2tqOJAtJ8eoGNHbG8-oz5_CNkM0xv6kQ.2/1633977214",
+            "initials": "TG",
+            "links": { "teams": [] }
+        }
+    ],
+    "payloads": [
+        {
+            "id": "59379-leads",
+            "type": "leads",
+            "isCurrentUserWatching": false,
+            "deletedTime": null,
+            "name": "Dasan LaRose",
+            "value": { "amount": "2563.97", "currency": "USD", "formatted": "$2,563.97" },
+            "number": "15593",
+            "description": "Dasan LaRose",
+            "createdTime": {
+                "absoluteLocalizedString": "August 29, 2023",
+                "timestamp": 1693345512,
+                "value": "August 29, 2023"
+            },
+            "closedTime": null,
+            "dueTime": null,
+            "anticipatedClosedTime": null,
+            "ownerType": "users",
+            "mcfxContactIds": [],
+            "status": "open",
+            "lastContactedTime": {
+                "absoluteLocalizedString": "August 30, 2023",
+                "timestamp": 1693408236,
+                "value": "August 30, 2023"
+            },
+            "pieState": "05",
+            "isOverdue": true,
+            "overdueTime": {
+                "fromNowLocalizedString": "1 week",
+                "timestamp": 1693350323,
+                "value": "August 29, 2023"
+            },
+            "href": "https://app.nutshell.com/rest/leads/59379-leads",
+            "confidence": 20,
+            "priority": 0,
+            "htmlUrl": "https://app.nutshell.com/lead/15593",
+            "htmlUrlPath": "/lead/15593",
+            "avatarUrl": "https://app.nutshell.com/avatar/leads/v1/0/1/3/0",
+            "initials": null,
+            "links": {
+                "accounts": [],
+                "contacts": ["57299-contacts"],
+                "tags": [],
+                "sources": ["239-sources"],
+                "owner": "111-users",
+                "files": [],
+                "relatedFiles": [],
+                "territory": "7-territories",
+                "destinations": [],
+                "stage": "207-stages",
+                "stageset": "35-stagesets",
+                "creator": "15-users",
+                "products": ["91-products"],
+                "productMaps": ["65771-productMaps"],
+                "competitors": [],
+                "competitorMaps": [],
+                "outcome": null,
+                "watchers": []
+            }
+        }
+    ],
+    "owners": [
+        {
+            "id": "111-users",
+            "type": "users",
+            "name": "Ashley Pilkington",
+            "firstName": "Ashley",
+            "modifiedTime": 1681928275,
+            "isEnabled": true,
+            "hasSetPassword": true,
+            "isAdministrator": true,
+            "isViewingRestricted": false,
+            "isHiddenFromFilters": false,
+            "canAccessEmailMarketing": true,
+            "emails": ["apilkington@sitmeanssit.com", "apilkingtonsitmeanssit@gmail.com"],
+            "phonecallerType": "",
+            "avatarUrl": "https://app.nutshell.com/avatar/users/111/318797/smKhTaNt8GICQrClabU3nF5d5Ah_GQq7a8rlE-gczk8.2/1681928275",
+            "initials": "AP",
+            "links": { "teams": ["11-teams"] }
+        }
+    ]
+}
