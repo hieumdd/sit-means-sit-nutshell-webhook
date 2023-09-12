@@ -1,7 +1,7 @@
-import { WebhookRequest } from './nutshell.request.dto';
+import { WebhookBody } from './nutshell.request.dto';
 import { insert } from '../bigquery.service';
 
-export const handleLeadChanges = async (dto: WebhookRequest) => {
+export const handleLeadChanges = async (dto: WebhookBody) => {
     const event = dto.events[0];
     const payload = dto.payloads[0];
 

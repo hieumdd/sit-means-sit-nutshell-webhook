@@ -1,4 +1,6 @@
-export type WebhookRequest = {
+import Joi from 'joi';
+
+export type WebhookBody = {
     events: {
         id: string;
         type: 'events';
@@ -15,3 +17,8 @@ export type WebhookRequest = {
         id: string;
     }[];
 };
+
+export const WebhookBodySchema = Joi.object({
+    events: Joi.any(),
+    payloads: Joi.any(),
+});
