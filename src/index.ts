@@ -2,7 +2,6 @@ import express from 'express';
 import { http } from '@google-cloud/functions-framework';
 
 import { logger } from './logging.service';
-import { WebhookBodySchema } from './nutshell/nutshell.request.dto';
 import { handleLeadChanges } from './nutshell/nutshell.service';
 
 const app = express();
@@ -12,14 +11,11 @@ app.use(({ headers, path, body }, _, next) => {
     next();
 });
 
-app.use('/', ({ body }, res) => {
-    const { error } = WebhookBodySchema.validate(body);
+app.get('/', (_, res) => {
+    res.status(200).json({ ok: true });
+});
 
-    if (error) {
-        res.status(200).json({ ok: true });
-        return;
-    }
-    
+app.post('/', ({ body }, res) => {
     handleLeadChanges(body)
         .then((result) => res.status(200).json({ result }))
         .catch((error) => {

@@ -5,7 +5,7 @@ export const handleLeadChanges = async (dto: WebhookBody) => {
     const event = dto.events[0];
     const payload = dto.payloads[0];
 
-    if (event.payloadType !== 'leads' || event.action !== 'update') {
+    if (event?.payloadType !== 'leads' || event?.action !== 'update') {
         return false;
     }
 
